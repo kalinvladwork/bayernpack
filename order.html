@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>bayernpack</title>
+    <script  type="text/javascript" src="libs/jquery-2.1.1.min.js"></script>
+    <script  type="text/javascript" src="libs/base-js.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header headerOrder">
+        <div class="logo clearfix"><img src="img/logo.png" alt="logo"/></div>
+        <div class="rightHead clearfix">
+            <div class="logoName clearfix">Bayern<span>pack</span>.de</div>
+            <div class="col headerOrderCol">
+                <h3>Контакты</h3>
+                <div class="mail">Bayernpack.de@mail.ru</div>
+                <div class="phone">+38 (066) 123 12 31 <br/> +38 (066) 123 12 31</div>
+            </div>
+        </div>
+    </header>
+    <div class="dividingLine"></div>
+    <div class="order">
+
+        <h1>Параметры заказа</h1>
+
+        <form class="order-content">
+
+            <div class="col orderColLeft">
+                <div class="section">
+                    <h3>Название</h3>
+                    <div class="sectionLine"></div>
+                    <div class="select">
+                        <select id="title" size='1' name="title">
+                            <option value="1">Маленькая коробка</option>
+                            <option value="2">Коробка</option>
+                            <option value="3">Большая коробка</option>
+                            <option value="4">Огромная коробка</option>
+                        </select>
+                    </div>
+                    <div class="sectionLine"></div>
+                </div>
+                <div class="section">
+                    <h3>Количество</h3>
+                    <div class="sectionLine"></div>
+
+                    <div class="number">
+                        <input type="text" value="1"/>
+                        <span class="plus">+</span>
+                        <span class="minus">-</span>
+                    </div>
+
+                    <div class="sectionLine"></div>
+                </div>
+                <div class="section">
+                    <h3>Контакты</h3>
+                    <div class="sectionLine"></div>
+                    <label for="gender">Пол:</label>
+                    <input id="gender" name="gender" type="text"/>
+                    <label for="name">Имя:</label>
+                    <input id="name" name="name" type="text"/>
+                    <label for="surname">Фамилия:</label>
+                    <input id="surname" name="surname" type="text"/>
+                    <label for="company">Компания:</label>
+                    <input id="company" name="company" type="text"/>
+                    <label for="city">Город:</label>
+                    <input id="city" name="city" type="text"/>
+                    <label for="street">Улица/номер дома:</label>
+                    <input id="street" name="street" type="text"/>
+                    <label for="postcode">Почтовый индекс:</label>
+                    <input id="postcode" name="postcode" type="text"/>
+                    <label for="mail">Электронная почта:</label>
+                    <input id="mail" name="mail" type="text"/>
+                    <label for="phone">Телефон:</label>
+                    <input id="phone" name="phone" type="text"/>
+                    <label for="fax" class="noMargin">Факс:</label>
+                    <input id="fax" name="fax" type="text" class="noMargin"/>
+                    <div class="sectionLine"></div>
+                </div>
+                <input type="submit"/>
+            </div>
+
+            <div class="col orderColRight">
+
+                <div class="section measurements">
+                    <h3>Внутренние размеры</h3>
+                    <div class="sectionLine"></div>
+
+                    <div class="col-inl">
+
+                        <label for="length">Длина «L» (мм) :</label>
+                        <input id="length" name="length" type="text"/>
+                        <label for="width">Ширина «B» (мм) :</label>
+                        <input id="width" name="width" type="text"/>
+                        <label for="height">Высота «H» (мм) :</label>
+                        <input id="height" name="height" type="text"/>
+
+                    </div>
+                    <div class="col-inl">
+
+                        <p class="proportions">10 см = 100 мм</p>
+                        <img class="measurementsImg" src="img/box.png" alt="measurements"/>
+
+                    </div>
+
+                    <div class="sectionLine"></div>
+                </div>
+
+                <div class="section quality">
+                    <h3>Качество</h3>
+                    <div class="sectionLine"></div>
+
+                    <div class="col-inl">
+                        <input id="quality3" name="quality" type="radio"/>
+                        <label for="quality3">3 слоя</label>
+                    </div>
+                    <div class="col-inl">
+                        <input id="quality5" name="quality" type="radio"/>
+                        <label for="quality5">5 слоев</label>
+                    </div>
+
+                    <div class="section">
+                        <div class="col-inl">
+                            <img src="img/layer1.png" alt=""/>
+                            <p>(до 20 кг)</p>
+                        </div>
+                        <div class="col-inl">
+                            <img src="img/layer2.png" alt=""/>
+                            <p>(до 35 кг)</p>
+                        </div>
+                    </div>
+
+                    <div class="sectionLine"></div>
+                </div>
+
+                <div class="section messages">
+                    <h3>Сообщение</h3>
+                    <div class="sectionLine"></div>
+
+                    <label for="topic">Тема:</label>
+                    <input id="topic" name="topic" type="text"/>
+
+                    <label for="message">Сообщение:</label>
+                    <textarea name="message" id="message"></textarea>
+
+                    <div class="sectionLine"></div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+    <div class="dividingLine"></div>
+</div>
+
+
+
+
+
+</body>
+</html>
